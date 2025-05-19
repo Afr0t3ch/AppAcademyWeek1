@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+   <link rel="stylesheet" href="style.css">
+   
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <h1>Animal category</h1>
+      <ul>
+        <li><a onclick="showContent('Mamals')" href="#">Mamals</a></li>
+        <li><a onclick="showContent('reptiles')" href="#">reptiles</a></li>
+        <li><a onclick="showContent('amphibians')" href="#">amphibians</a></li>
+        <li><a onclick="showContent('domestic')" href="#">domestic</a></li>
+      </ul>
+    </div>
+    <div class="main-contant" id="content">
+      <h1>welcome to the zoo</h1>
+      <h2>select animal category you want to learn more about</h2>
+    </div>
+    <!--hiden-contant-->
+    <div id="Mamals" class="hiden-content">
+      <h1>List of Mamals</h1>
+      <p>select one to learn more</p>
+      <ul>
+        <li onclick="showAnimal('Rihno')">Rihno</li>
+        <li onclick="showAnimal('Elephant')">Elephant</li>
+        <li onclick="showAnimal('Baffalo')">Baffalo</li>
+        <li onclick="showAnimal('Hipopotomas')">Hipopotomas</li>
+        <li onclick="showAnimal('liopad')">liopad</li>
+      </ul>
+    </div>
+    
+    <div id="reptiles" class="hiden-content">
+      <h1>List of reptiles</h1>
+      <p>select one to learn more</p>
+      <ul>
+        <li onclick="showAnimal('Crocodie')">Crocodie</li>
+        <li onclick="showAnimal('Snake')">Snake</li>
+        <li onclick="showAnimal('Lizard')">Lizard</li>
+        <li onclick="showAnimal('Turtle')">Turtle</li>
+        <li onclick="showAnimal('Comodo')">Comodo Dragon</li>
+      </ul>
+    </div>
+    
+    <div id="amphibians" class="hiden-content">
+      <h1>List of amphibians</h1>
+      <p>select one to learn more</p>
+      <ul>
+        <li onclick="showAnimal('Frog')">Frog</li>
+        <li onclick="showAnimal('Toad')">Toad</li>
+        <li onclick="showAnimal('Salamander')">Salamander</li>
+        <li onclick="showAnimal('newt')">newt</li>
+        <li onclick="showAnimal('Caicilian')">Caicilian</li>
+      </ul>
+    </div>
+    
+    <div id="domestic" class="hiden-content">
+      <h1>List of domestic animals</h1>
+      <p>select one to learn more</p>
+      <ul>
+        <li onclick="showAnimal('Dog')">Dog</li>
+        <li onclick="showAnimal('Cat')">Cat</li>
+        <li onclick="showAnimal('Cow')">Cow</li>
+        <li onclick="showAnimal('Goat')">Goat</li>
+        <li onclick="showAnimal('Chicken')">Chicken</li>
+      </ul>
+    </div>
+    <!-- animalPopup-->
+    <div id="animalPopup" class="animalPopup">
+      <img id="animalImage" class="animalImage" src="" alt="animal">
+      <p id="animalName" class="animalName" ></p>
+      <button onclick="closePopup()">close</button>
+    </div>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
